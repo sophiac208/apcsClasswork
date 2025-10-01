@@ -10,10 +10,12 @@ public class MyArrays( {
     return result
   }
 
-//  public static int[] returnCopy(int[]ary) {
-  //  for (int i = 0; i < ary.length; i++) {
-
+  public static int[] returnCopy(int[]ary) {
+    int[] aryCopy = new int[ary.length];
+    for (int i = 0; i < ary.length; i++) {
+      aryCopy[i] = ary[i];
     }
+    return aryCopy;
   }
 
 
