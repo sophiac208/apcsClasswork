@@ -1,4 +1,4 @@
-public class MyArrays( {
+public class MyArrays {
 
   // created to display the array contents
   public static String aryToString(int[] nums) {
@@ -9,7 +9,7 @@ public class MyArrays( {
         result += nums[i] + ", ";
       }
     }
-    return result
+    return result;
   }
 
   public static int[] returnCopy(int[]ary) {
@@ -36,25 +36,25 @@ public class MyArrays( {
   }
 
 //test cases
-  public static void (String[] args){
+  public static void main(String[] args){
     int[] ary = {1,2,3,4};
-    System.out.println aryToString(returnCopy(ary));
-    int[] ary = {-1,0};
-    System.out.println aryToString(returnCopy(ary));
-    int[] ary = {};
-    System.out.println aryToString(returnCopy(ary));
+    System.out.println(aryToString(returnCopy(ary)));
+    ary = new int[]{0,2,3,4};
+    System.out.println(aryToString(returnCopy(ary)));
+    ary = new int[]{1};
+    System.out.println(aryToString(returnCopy(ary)));
 
     int[] ary1 = {1,2,3,4};
     int[] ary2 = {5,6,7,8};
-    System.out.println aryToString(concatArray(ary1, ary2));
+    System.out.println(aryToString(concatArray(ary1, ary2)));
 
-    int[] ary1 = {};
-    int[] ary2 = {};
-    System.out.println aryToString(concatArray(ary1, ary2));
+    ary1 = new int[]{1};
+    ary2 = new int[]{0};
+    System.out.println(aryToString(concatArray(ary1, ary2)));
 
-    int[] ary1 = {};
-    int[] ary2 = {3,4,5};
-    System.out.println aryToString(concatArray(ary1, ary2));
+    ary1 = new int[]{1};
+    ary2 = new int[]{3,4,5};
+    System.out.println(aryToString(concatArray(ary1, ary2)));
 
   }
 }
