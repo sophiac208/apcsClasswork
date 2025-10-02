@@ -40,10 +40,15 @@ public class ArrayMethods {
       return sum;
     }
 
-
-
-
-
+  public static int[][] swapRC(int[][]nums) {
+    int [][] ary = new int[nums[0].length][nums.length];
+    for (int i= 0; i<nums[0].length;i++) {
+      for (int l =0; l<nums.length; l++) {
+        ary[i][l] = nums[l][i];
+      }
+    }
+    return ary;
+  }
 
 
 
