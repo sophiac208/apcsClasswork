@@ -8,22 +8,43 @@ public class ArrayMethods {
 
 
   public static String aryToString(int[] nums) {
-    String result = "";
+    String result = "[]";
     for (int i = 0; i< nums.length; i++) {
       result += nums[i];
       if (i<nums.length-1) {
         result += nums[i] + ", ";
       }
     }
-    return result;
+    return result + "]";
   }
 
   public static String arrToString(int[][]ary){
   //this method should call arrToString(int[])
   String result = "[";
   for (int i =0; i < ary.length; i++){
-    result += arrToString(ary[i]) + ", ";
+    result += aryToString(ary[i]);
+    if (i<ary.length-1) {
+      result += ", ";
+    }
   }
   return result + "]";
+}
+
+  public static int arr2DSum(int[][] nums) {
+    int sum= 0;
+    for (int i = 0; i<nums.length;i++) {
+      for (int l=0; i< nums[i].length; l++) {
+        sum+= nums[i][l];
+      }
+      }
+      return sum;
+    }
+
+
+
+
+
+
+
 
 }
