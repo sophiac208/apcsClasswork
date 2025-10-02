@@ -1,10 +1,16 @@
 public class ArrayMethods {
   // Sophia Chen (sophiac208@nycstudents.net) & Aiden Decatur (aidend39@nycstudents.net)
+
+
   public static void main(String[] args) {
-    new int[][] ary1 = new int[][] {{3,2,1}, {9,8,7}, {6,5,4}};
-    System.out.println(arrToString(ary1));
-    ary1 = new int[][] {{}, {3,4,6}, {3,2}};
-  }
+      int[][] ary1 = new int[][] {{3,2,1}, {9,8,7}, {6,5,4}};
+      System.out.println(arrToString(ary1));
+      System.out.println(arr2DSum(ary1));
+      System.out.println(arrToString(swapRC(ary1)));
+      ary1 = new int[][] {{}, {3,4,6}, {3,2}};
+      System.out.println(arrToString(ary1));
+      System.out.println(arr2DSum(ary1));
+    }
 
 
   public static String aryToString(int[] nums) {
