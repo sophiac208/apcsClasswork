@@ -25,5 +25,16 @@ public class ArrayMethods {
     result += arrToString(ary[i]) + ", ";
   }
   return result + "]";
-
 }
+  public static void replaceNegative (int [][] vals) {
+    String result = "[";
+    for (int i = 0; i< vals.length; i++) {
+      for (int j = 0; j < vals[i].length; j++) {
+        if (i==j && vals[i][j]<0) {
+          vals[i][j] == 1;
+        }
+        }
+      }
+    }
+    return result + "]";
+  }
